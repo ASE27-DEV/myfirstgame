@@ -9,7 +9,7 @@ loopPlay = false;
 
 function start() {
     count = 0; // Au départ du jeu je met le compteur de socre à 0
-    getFaster = 5000; // Je définie un temps maximum entre chaque pop de mob
+    getFaster = 4500; // Je définie un temps maximum entre chaque pop de mob
     zombieRemaining = zombieLeft; // Je dis que le nombre de mob restant égale le nombre de départ stipulé hors fonction
 
     canvas.innerHTML = ''; // Je met le canvas vide
