@@ -1,2 +1,2 @@
 # myfirstgame
-First funny test of video game using canvas
+First funny test of video game using canvas.
