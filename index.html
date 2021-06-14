@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Petit Jeux For Fun</title>
+
+    <!-- SCRIPT JS -->
+    <script src="./js/script.js" defer></script>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css.map">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+<body>   <!-- onload="onMessage('Hello Javascript')" La fonction onload dans le 'body' permet le lancement de fonction JS 
+        au chargement de la page il est également possible de faire la même chose avec la fonction mise dans le fichier JS -->
+
+    <div id="endScreen"></div> <!-- Je crée ma div pour l'écran de fin de partie -->
+
+    <button id="start" onclick="start()">Démarrez/Redémarrez le jeu</button> <!-- Je crée mon bouton start pour démarrez ma partie -->
+
+    <!-- Je crée ma div pour le scoreboard avec les élements qui m'intéresse dedans -->
+    <div class="scoreboard"> 
+        <div class="kills">score : <span id="score"></span></div> <!-- Le compteur du nombre de kills -->
+
+        <div class="confinement">Zombies restant à tuer avant invasion : <span id="zombie"></span></div> <!-- Temps restant avec le Game Over -->
+
+        <div id="canvas"></div> <!-- Ici je crée la div qui contiendra mon espace de jeux -->
+
+    </div>
+
+</body>
+</html>
